@@ -1,8 +1,10 @@
 CREATE TABLE IF NOT EXISTS Products (
-                                        id INT,
-                                        name VARCHAR(255),
-    status VARCHAR(50)
+                                        ID int not null AUTO_INCREMENT,
+                                        NAME varchar(100) not null,
+    STATUS int,
+    PRIMARY KEY ( ID )
     );
 
-INSERT INTO Products (id, name, status) VALUES (1, 'Laptop', 1);
-INSERT INTO Products (id, name, status) VALUES (1, 'Gamer Mouse', 0);
+
+-- INSERT INTO Products (id, name, status) VALUES (2, 'Gamer Mouse', 0);
+
