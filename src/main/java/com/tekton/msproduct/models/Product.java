@@ -12,5 +12,11 @@ public class Product {
     private Long id;
     private String name;
     private StatusEnum status;
+    private int stock;
+    private String description;
+    private float price;
+    private float discount;
+    private float finalPrice;
+    private String sku;
 
 }

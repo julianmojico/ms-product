@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum StatusEnum {
 
-    ENABLED(1),
-    DISABLED(0);
+    Active(1),
+    Inactive(0);
 
     private final int value;
 
