@@ -1,7 +1,6 @@
 package com.tekton.msproduct.models;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Value;
 
 @Entity
 @Table(name = "products")
@@ -9,9 +8,9 @@ import org.springframework.beans.factory.annotation.Value;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Status status;
+    private StatusEnum status;
 
 }
