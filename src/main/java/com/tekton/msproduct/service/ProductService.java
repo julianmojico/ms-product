@@ -17,4 +17,9 @@ public class ProductService {
             return null;
         }
     }
+
+    public Product saveProduct(Product product) {
+        //TODO: validations
+        return productRepository.save(product);
+    }
 }
