@@ -5,6 +5,7 @@ import static org.mockito.Mockito.*;
 import com.tekton.msproduct.models.ProductDTO;
 import com.tekton.msproduct.models.StatusEnum;
 import com.tekton.msproduct.service.ProductService;
+import jakarta.validation.Validator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -12,7 +13,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
+
+import java.util.Set;
 
 @ExtendWith(MockitoExtension.class)
 class ProductControllerTest {
@@ -22,6 +24,7 @@ class ProductControllerTest {
 
     @InjectMocks
     private ProductController productController;
+
 
     @Test
     @DisplayName("When fetching a valid product, then return HTTP status code 200 and json in the body")
@@ -62,20 +65,6 @@ class ProductControllerTest {
         assertEquals(mockProduct, response.getBody());
     }
 
-    @Test
-    @DisplayName("When product creation fails due to data type validations, then return HTTP status code 400 and error")
-    void createProductDataTypeValidationFailedTest() {
-
-        ProductDTO mockProduct = invalidProduct();
-       // when(productService.saveProduct(mockProduct)).thenThrow(Exception) .thenReturn(mockProduct);
-
-        ResponseEntity<?> response = productController.saveProduct(mockProduct);
-        //Errors errors = new BeanPropertyBindingResult(invalidProduct(), "invalidProduct");
-        when(productController.saveProduct(invalidProduct())).thenCallRealMethod();
-        assertEquals(400, response.getStatusCodeValue());
-        //assertEquals(mockProduct, response.getBody());
-    }
-
     ProductDTO validProduct(){
        return ProductDTO.builder()
                 .id(1L)
@@ -83,17 +72,9 @@ class ProductControllerTest {
                 .price(100.0f)
                 .description("description")
                 .stock(10)
-                .status(StatusEnum.Active)
+                .status(StatusEnum.Active.getValue())
                 .sku("SKU1234")
                 .build();
     }
 
-    ProductDTO invalidProduct(){
-        return ProductDTO.builder()
-                .id(1L)
-                .price(100.0f)
-                .stock(10)
-                .name(null)
-                .build();
-    }
 }

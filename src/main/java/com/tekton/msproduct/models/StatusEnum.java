@@ -1,11 +1,13 @@
 package com.tekton.msproduct.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonValue;
-
+@JsonFormat(shape = JsonFormat.Shape.NUMBER_INT)
 public enum StatusEnum {
 
     Active(1),
     Inactive(0);
+
 
     private final int value;
 
@@ -26,7 +28,6 @@ public enum StatusEnum {
         throw new IllegalArgumentException("Invalid status value: " + value);
     }
 
-    @JsonValue
     public int getValue() {
         return value;
     }

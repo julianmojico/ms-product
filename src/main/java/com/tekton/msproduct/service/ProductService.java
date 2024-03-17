@@ -2,9 +2,11 @@ package com.tekton.msproduct.service;
 
 import com.tekton.msproduct.models.Product;
 import com.tekton.msproduct.models.ProductDTO;
+import com.tekton.msproduct.models.StatusEnum;
 import com.tekton.msproduct.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 @Service
 public class ProductService {
@@ -23,7 +25,7 @@ public class ProductService {
     private ProductDTO toDTO(Product product) {
         return ProductDTO.builder()
                 .id(product.getId())
-                .status(product.getStatus())
+                .status(product.getStatus().getValue())
                 .sku(product.getSku())
                 .price(product.getPrice())
                 .stock(product.getStock())
@@ -38,7 +40,7 @@ public class ProductService {
 
         Product product = new Product();
         product.setId(productDTO.getId());
-        product.setStatus(productDTO.getStatus());
+        product.setStatus(StatusEnum.fromValue(productDTO.getStatus()));
         product.setSku(productDTO.getSku());
         product.setPrice(productDTO.getPrice());
         product.setStock(productDTO.getStock());
