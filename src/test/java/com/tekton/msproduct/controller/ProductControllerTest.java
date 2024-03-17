@@ -2,7 +2,8 @@ package com.tekton.msproduct.controller;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-import com.tekton.msproduct.models.Product;
+import com.tekton.msproduct.models.ProductDTO;
+import com.tekton.msproduct.models.StatusEnum;
 import com.tekton.msproduct.service.ProductService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -26,13 +27,23 @@ class ProductControllerTest {
     @DisplayName("When fetching a valid product, then return HTTP status code 200 and json in the body")
     void getProductByIdSuccessTest() {
 
-        Long id = 1L;
-        Product mockProduct = new Product();
-        when(productService.getProductById(id)).thenReturn(mockProduct);
+        ProductDTO mockProduct = validProduct();
+        when(productService.getProductById(mockProduct.getId())).thenReturn(mockProduct);
 
-        BindingResult bindingResult = mock(BindingResult.class);
+        ResponseEntity<?> response = productController.getProductById(mockProduct.getId());
 
-        ResponseEntity<?> response = productController.getProductById(id);
+        assertEquals(200, response.getStatusCodeValue());
+        assertEquals(mockProduct, response.getBody());
+    }
+
+    @Test
+    @DisplayName("When fetching a valid product, then return HTTP status code 200 and json in the body")
+    void getProductByIdFailedTest() {
+
+        ProductDTO mockProduct = validProduct();
+        when(productService.getProductById(validProduct().getId())).thenReturn(mockProduct);
+
+        ResponseEntity<?> response = productController.getProductById(validProduct().getId());
 
         assertEquals(200, response.getStatusCodeValue());
         assertEquals(mockProduct, response.getBody());
@@ -42,25 +53,47 @@ class ProductControllerTest {
     @DisplayName("When product is successfully created, then return HTTP status code 201 and json in the body")
     void createProductSuccessTest() {
 
-        Product productToCreate = new Product();
-        when(productService.saveProduct(productToCreate)).thenReturn(productToCreate);
+        ProductDTO mockProduct = validProduct();
+        when(productService.saveProduct(mockProduct)).thenReturn(mockProduct);
 
-        ResponseEntity<?> response = productController.saveProduct(productToCreate);
+        ResponseEntity<?> response = productController.saveProduct(mockProduct);
 
         assertEquals(201, response.getStatusCode().value());
-        assertEquals(productToCreate, response.getBody());
+        assertEquals(mockProduct, response.getBody());
     }
 
     @Test
-    @DisplayName("When product creation fails due to data type validations, then return HTTP status code 400 and json in the body")
+    @DisplayName("When product creation fails due to data type validations, then return HTTP status code 400 and error")
     void createProductDataTypeValidationFailedTest() {
 
-        Product productToCreate = new Product();
-        when(productService.saveProduct(productToCreate)).thenReturn(productToCreate);
+        ProductDTO mockProduct = invalidProduct();
+       // when(productService.saveProduct(mockProduct)).thenThrow(Exception) .thenReturn(mockProduct);
 
-        ResponseEntity<?> response = productController.saveProduct(productToCreate);
+        ResponseEntity<?> response = productController.saveProduct(mockProduct);
+        //Errors errors = new BeanPropertyBindingResult(invalidProduct(), "invalidProduct");
+        when(productController.saveProduct(invalidProduct())).thenCallRealMethod();
+        assertEquals(400, response.getStatusCodeValue());
+        //assertEquals(mockProduct, response.getBody());
+    }
 
-        assertEquals(201, response.getStatusCodeValue());
-        assertEquals(productToCreate, response.getBody());
+    ProductDTO validProduct(){
+       return ProductDTO.builder()
+                .id(1L)
+                .name("productName")
+                .price(100.0f)
+                .description("description")
+                .stock(10)
+                .status(StatusEnum.Active)
+                .sku("SKU1234")
+                .build();
+    }
+
+    ProductDTO invalidProduct(){
+        return ProductDTO.builder()
+                .id(1L)
+                .price(100.0f)
+                .stock(10)
+                .name(null)
+                .build();
     }
 }

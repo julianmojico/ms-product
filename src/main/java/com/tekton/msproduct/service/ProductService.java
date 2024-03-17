@@ -1,6 +1,7 @@
 package com.tekton.msproduct.service;
 
 import com.tekton.msproduct.models.Product;
+import com.tekton.msproduct.models.ProductDTO;
 import com.tekton.msproduct.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -11,20 +12,50 @@ public class ProductService {
     @Autowired
     ProductRepository productRepository;
 
-    public Product getProductById(Long id) {
+    public ProductDTO getProductById(Long id) {
         if (productRepository.findById(id).isPresent()) {
-            return productRepository.findById(id).get();
+            return toDTO(productRepository.findById(id).get());
         } else {
             return null;
         }
     }
 
-    public Product saveProduct(Product product) {
-        //TODO: Business validations
+    private ProductDTO toDTO(Product product) {
+        return ProductDTO.builder()
+                .id(product.getId())
+                .status(product.getStatus())
+                .sku(product.getSku())
+                .price(product.getPrice())
+                .stock(product.getStock())
+                .name(product.getName())
+                .description(product.getDescription())
+                .finalPrice(product.getFinalPrice())
+                .discount(product.getDiscount())
+                .build();
+    }
 
+    private Product toEntity(ProductDTO productDTO) {
+
+        Product product = new Product();
+        product.setId(productDTO.getId());
+        product.setStatus(productDTO.getStatus());
+        product.setSku(productDTO.getSku());
+        product.setPrice(productDTO.getPrice());
+        product.setStock(productDTO.getStock());
+        product.setName(productDTO.getName());
+        product.setDescription(productDTO.getDescription());
+        product.setFinalPrice(productDTO.getFinalPrice());
+        product.setDiscount(productDTO.getDiscount());
+
+        return product;
+
+    }
+
+    public ProductDTO saveProduct(ProductDTO productDTO) {
         try {
-
-            return productRepository.save(product);
+            Product product = toEntity(productDTO);
+            Product result = productRepository.save(product);
+            return toDTO(result);
         } catch (Exception ex) {
             throw (DataAccessException) ex;
         }
