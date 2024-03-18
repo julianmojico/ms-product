@@ -1,23 +1,38 @@
 package com.tekton.msproduct.service;
 
+import com.tekton.msproduct.config.LoggerConfig;
 import com.tekton.msproduct.models.Product;
 import com.tekton.msproduct.models.ProductDTO;
 import com.tekton.msproduct.models.StatusEnum;
 import com.tekton.msproduct.repository.ProductRepository;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpMethod;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.resource.NoResourceFoundException;
+
+import java.util.concurrent.TimeUnit;
+
 
 @Service
 public class ProductService {
 
     @Autowired
     ProductRepository productRepository;
+    private final CacheManager cacheManager;
+
+    public ProductService(CacheManager cacheManager) {
+        this.cacheManager = cacheManager;
+    }
+
+    @Cacheable("productsStatus")
 
     public ProductDTO getProductById(Long id) {
-
         try {
             if (productRepository.findById(id).isPresent()) {
                 return toDTO(productRepository.findById(id).get());
@@ -28,6 +43,7 @@ public class ProductService {
             throw (DataAccessException) ex;
         }
     }
+
 
     private ProductDTO toDTO(Product product) {
         return ProductDTO.builder()

@@ -1,5 +1,6 @@
 package com.tekton.msproduct.config;
 
+import lombok.Getter;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.After;
@@ -9,9 +10,11 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class RequestLoggingAspect {
 
-    private static final Logger logger = LoggerFactory.getLogger(RequestLoggingAspect.class);
+public class LoggerConfig {
+
+    @Getter
+    private static final Logger logger = LoggerFactory.getLogger(LoggerConfig.class);
 
     @Before("execution(* com.tekton.msproduct.controller.*.*(..))")
     public void logBefore() {
