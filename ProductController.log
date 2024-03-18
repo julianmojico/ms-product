@@ -69,3 +69,7 @@
 2024-03-17T21:58:13.802-03:00  INFO 59254 --- [ms-product] [http-nio-8080-exec-1] c.t.m.config.RequestLoggingAspect        : Request processed at: 1710723493802
 2024-03-17T21:58:15.871-03:00  INFO 59254 --- [ms-product] [http-nio-8080-exec-2] c.t.m.config.RequestLoggingAspect        : Request received at: 1710723495871
 2024-03-17T21:58:15.909-03:00  INFO 59254 --- [ms-product] [http-nio-8080-exec-2] c.t.m.config.RequestLoggingAspect        : Request processed at: 1710723495909
+2024-03-17T22:49:20.911-03:00  WARN 59254 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m59s37ms).
+2024-03-17T23:06:33.466-03:00  INFO 59254 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-17T23:06:33.477-03:00  INFO 59254 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-17T23:06:33.495-03:00  INFO 59254 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

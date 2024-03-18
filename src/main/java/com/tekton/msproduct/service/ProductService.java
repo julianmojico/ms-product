@@ -6,8 +6,10 @@ import com.tekton.msproduct.models.StatusEnum;
 import com.tekton.msproduct.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
-import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
+
 @Service
 public class ProductService {
 
@@ -15,10 +17,15 @@ public class ProductService {
     ProductRepository productRepository;
 
     public ProductDTO getProductById(Long id) {
-        if (productRepository.findById(id).isPresent()) {
-            return toDTO(productRepository.findById(id).get());
-        } else {
-            return null;
+
+        try {
+            if (productRepository.findById(id).isPresent()) {
+                return toDTO(productRepository.findById(id).get());
+            } else {
+                return null;
+            }
+        } catch (Exception ex) {
+            throw (DataAccessException) ex;
         }
     }
 
@@ -53,7 +60,7 @@ public class ProductService {
 
     }
 
-    public ProductDTO saveProduct(ProductDTO productDTO) {
+    public ProductDTO insertProduct(ProductDTO productDTO) {
         try {
             Product product = toEntity(productDTO);
             Product result = productRepository.save(product);
@@ -61,5 +68,17 @@ public class ProductService {
         } catch (Exception ex) {
             throw (DataAccessException) ex;
         }
+    }
+
+    public ProductDTO updateProduct(ProductDTO productDTO, Long id) throws NoResourceFoundException {
+            if (productRepository.findById(id).isPresent()) {
+                Product product = toEntity(productDTO);
+                product.setId(id);
+                Product result = productRepository.save(product);
+                return toDTO(result);
+            } else {
+                throw new NoResourceFoundException(HttpMethod.PUT,"No product found with id: " + id);
+            }
+
     }
 }

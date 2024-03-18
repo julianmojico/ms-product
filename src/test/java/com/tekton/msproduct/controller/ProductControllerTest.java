@@ -5,7 +5,6 @@ import static org.mockito.Mockito.*;
 import com.tekton.msproduct.models.ProductDTO;
 import com.tekton.msproduct.models.StatusEnum;
 import com.tekton.msproduct.service.ProductService;
-import jakarta.validation.Validator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -13,8 +12,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.http.ResponseEntity;
-
-import java.util.Set;
 
 @ExtendWith(MockitoExtension.class)
 class ProductControllerTest {
@@ -57,7 +54,7 @@ class ProductControllerTest {
     void createProductSuccessTest() {
 
         ProductDTO mockProduct = validProduct();
-        when(productService.saveProduct(mockProduct)).thenReturn(mockProduct);
+        when(productService.insertProduct(mockProduct)).thenReturn(mockProduct);
 
         ResponseEntity<?> response = productController.saveProduct(mockProduct);
 
