@@ -1,50 +1,66 @@
 package com.tekton.msproduct.service;
 
-import com.tekton.msproduct.config.LoggerConfig;
+import com.tekton.msproduct.models.Discount;
 import com.tekton.msproduct.models.Product;
 import com.tekton.msproduct.models.ProductDTO;
 import com.tekton.msproduct.models.StatusEnum;
 import com.tekton.msproduct.repository.ProductRepository;
-import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpMethod;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.resource.NoResourceFoundException;
-
-import java.util.concurrent.TimeUnit;
-
 
 @Service
 public class ProductService {
 
     @Autowired
     ProductRepository productRepository;
-    private final CacheManager cacheManager;
 
-    public ProductService(CacheManager cacheManager) {
-        this.cacheManager = cacheManager;
-    }
+    @Autowired
+    DiscountsAPIService discountsAPIService;
 
     @Cacheable("productsStatus")
 
     public ProductDTO getProductById(Long id) {
-        try {
             if (productRepository.findById(id).isPresent()) {
-                return toDTO(productRepository.findById(id).get());
+                Product output = productRepository.findById(id).get();
+                updatePrices(id, output);
+                return toDTO(output);
             } else {
                 return null;
             }
+    }
+
+    private void updatePrices(Long id, Product output) {
+        Discount discount = discountsAPIService.fetchDataFromExternalService(id);
+        output.setDiscount(discount.getDiscount());
+        float finalPrice = (output.getPrice() * (100 - output.getDiscount())) / 100;
+        output.setFinalPrice(finalPrice);
+    }
+
+    public ProductDTO insertProduct(ProductDTO productDTO) {
+        try {
+            Product product = toEntity(productDTO);
+            Product result = productRepository.save(product);
+            updatePrices(result.getId(), result);
+            return toDTO(result);
         } catch (Exception ex) {
             throw (DataAccessException) ex;
         }
     }
 
-
+    public ProductDTO updateProduct(ProductDTO productDTO, Long id) throws NoResourceFoundException {
+            if (productRepository.findById(id).isPresent()) {
+                Product product = toEntity(productDTO);
+                product.setId(id);
+                Product result = productRepository.save(product);
+                return toDTO(result);
+            } else {
+                throw new NoResourceFoundException(HttpMethod.PUT,"No product found with id: " + id);
+            }
+    }
     private ProductDTO toDTO(Product product) {
         return ProductDTO.builder()
                 .id(product.getId())
@@ -73,28 +89,6 @@ public class ProductService {
         product.setDiscount(productDTO.getDiscount());
 
         return product;
-
-    }
-
-    public ProductDTO insertProduct(ProductDTO productDTO) {
-        try {
-            Product product = toEntity(productDTO);
-            Product result = productRepository.save(product);
-            return toDTO(result);
-        } catch (Exception ex) {
-            throw (DataAccessException) ex;
-        }
-    }
-
-    public ProductDTO updateProduct(ProductDTO productDTO, Long id) throws NoResourceFoundException {
-            if (productRepository.findById(id).isPresent()) {
-                Product product = toEntity(productDTO);
-                product.setId(id);
-                Product result = productRepository.save(product);
-                return toDTO(result);
-            } else {
-                throw new NoResourceFoundException(HttpMethod.PUT,"No product found with id: " + id);
-            }
 
     }
 }

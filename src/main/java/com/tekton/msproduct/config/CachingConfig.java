@@ -1,5 +1,7 @@
 package com.tekton.msproduct.config;
 
+import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.EnableCaching;
@@ -13,6 +15,8 @@ import java.util.concurrent.TimeUnit;
 @EnableCaching
 public class CachingConfig {
 
+    @Autowired
+    Logger logger;
     @Bean
     public static CacheManager cacheManager() {
         return new ConcurrentMapCacheManager("productsStatus");
@@ -21,7 +25,7 @@ public class CachingConfig {
     @Scheduled(fixedRate = 5L, timeUnit = TimeUnit.MINUTES )
     @CacheEvict(value = "productsStatus", allEntries = true)
     public void clearCache() {
-        LoggerConfig.getLogger().info("cleared productsStatus cache");
+        logger.info("cleared productsStatus cache");
         CachingConfig.cacheManager().getCache("productsStatus").clear();
     }
 }

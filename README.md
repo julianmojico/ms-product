@@ -45,5 +45,5 @@ https://www.baeldung.com/exception-handling-for-rest-with-spring
 https://salithachathuranga94.medium.com/validation-and-exception-handling-in-spring-boot-51597b580ffd
 https://www.baeldung.com/spring-rest-openapi-documentation
 https://medium.com/@itasyurt/how-to-customize-caches-with-spring-spring-boot-de801d5ecf38
-
+https://www.baeldung.com/rest-template
 TODO Pageable: https://www.baeldung.com/spring-rest-openapi-documentation

@@ -6,6 +6,7 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.After;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -13,8 +14,12 @@ import org.springframework.stereotype.Component;
 
 public class LoggerConfig {
 
-    @Getter
     private static final Logger logger = LoggerFactory.getLogger(LoggerConfig.class);
+
+    @Bean
+    public Logger logger() {
+        return logger;
+    }
 
     @Before("execution(* com.tekton.msproduct.controller.*.*(..))")
     public void logBefore() {
