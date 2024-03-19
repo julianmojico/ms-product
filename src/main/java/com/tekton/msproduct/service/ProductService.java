@@ -6,33 +6,45 @@ import com.tekton.msproduct.models.ProductDTO;
 import com.tekton.msproduct.models.StatusEnum;
 import com.tekton.msproduct.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.resource.NoResourceFoundException;
 
+import java.util.Map;
+
 @Service
+@CacheConfig(cacheNames = "productStatus")
+@Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class ProductService {
+
+    @Autowired
+    ProductService self;
 
     @Autowired
     ProductRepository productRepository;
 
     @Autowired
     DiscountsAPIService discountsAPIService;
-
-    @Cacheable("productsStatus")
-
     public ProductDTO getProductById(Long id) {
             if (productRepository.findById(id).isPresent()) {
                 Product output = productRepository.findById(id).get();
                 updatePrices(id, output);
+                self.saveProductsStatusCache(output);
                 return toDTO(output);
             } else {
                 return null;
             }
     }
 
+    @Cacheable("productsStatus")
+    public Map<Long, Integer> saveProductsStatusCache(Product product) {
+        return Map.of(product.getId(), product.getStatus().getValue());
+    }
     private void updatePrices(Long id, Product output) {
         Discount discount = discountsAPIService.fetchDataFromExternalService(id);
         output.setDiscount(discount.getDiscount());
