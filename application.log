@@ -511,3 +511,698 @@ Consider defining a bean of type 'org.slf4j.Logger' in your configuration.
 2024-03-18T02:28:39.565-03:00  INFO 67201 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-03-18T02:28:39.577-03:00  INFO 67201 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-03-18T02:28:39.580-03:00  INFO 67201 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T12:43:33.849-03:00  INFO 72785 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 72785 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T12:43:33.852-03:00  INFO 72785 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T12:43:33.890-03:00  INFO 72785 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T12:43:33.891-03:00  INFO 72785 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T12:43:35.027-03:00  INFO 72785 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T12:43:35.081-03:00  INFO 72785 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-03-18T12:43:36.198-03:00  INFO 72785 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T12:43:36.213-03:00  INFO 72785 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T12:43:36.213-03:00  INFO 72785 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T12:43:36.264-03:00  INFO 72785 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2373 ms
+2024-03-18T12:43:36.459-03:00  INFO 72785 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T12:43:36.772-03:00  INFO 72785 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T12:43:36.774-03:00  INFO 72785 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T12:43:36.786-03:00  INFO 72785 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T12:43:37.032-03:00  INFO 72785 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T12:43:37.089-03:00  INFO 72785 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T12:43:37.125-03:00  INFO 72785 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T12:43:37.398-03:00  INFO 72785 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T12:43:37.450-03:00  WARN 72785 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T12:43:38.380-03:00  INFO 72785 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T12:43:38.390-03:00  INFO 72785 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T12:43:39.238-03:00  WARN 72785 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T12:43:41.336-03:00  INFO 72785 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T12:43:41.352-03:00  INFO 72785 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T12:43:41.459-03:00  INFO 72785 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T12:43:41.477-03:00  INFO 72785 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 8.068 seconds (process running for 8.559)
+2024-03-18T12:43:41.486-03:00  INFO 72785 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T12:43:41.505-03:00  INFO 72785 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T12:43:41.508-03:00  INFO 72785 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T12:43:41.510-03:00  INFO 72785 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T12:48:39.947-03:00  INFO 73084 --- [ms-product] [Test worker] c.t.msproduct.MsProductApplicationTests  : Starting MsProductApplicationTests using Java 21.0.2 with PID 73084 (started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T12:48:39.953-03:00  INFO 73084 --- [ms-product] [Test worker] c.t.msproduct.MsProductApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T12:48:41.181-03:00  INFO 73084 --- [ms-product] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T12:48:41.234-03:00  INFO 73084 --- [ms-product] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-03-18T12:48:42.176-03:00  INFO 73084 --- [ms-product] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T12:48:42.469-03:00  INFO 73084 --- [ms-product] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T12:48:42.471-03:00  INFO 73084 --- [ms-product] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T12:48:42.522-03:00  INFO 73084 --- [ms-product] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T12:48:42.587-03:00  INFO 73084 --- [ms-product] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T12:48:42.625-03:00  INFO 73084 --- [ms-product] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T12:48:42.894-03:00  INFO 73084 --- [ms-product] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T12:48:42.946-03:00  WARN 73084 --- [ms-product] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T12:48:43.864-03:00  INFO 73084 --- [ms-product] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T12:48:43.868-03:00  INFO 73084 --- [ms-product] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T12:48:45.126-03:00  WARN 73084 --- [ms-product] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T12:48:47.486-03:00  INFO 73084 --- [ms-product] [Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T12:48:47.696-03:00  INFO 73084 --- [ms-product] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T12:48:47.814-03:00  INFO 73084 --- [ms-product] [Test worker] c.t.msproduct.MsProductApplicationTests  : Started MsProductApplicationTests in 8.189 seconds (process running for 9.518)
+2024-03-18T12:48:47.824-03:00  INFO 73084 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T12:48:49.217-03:00  INFO 73084 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T12:48:49.229-03:00  INFO 73084 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T12:48:49.235-03:00  INFO 73084 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T12:50:43.582-03:00  INFO 73164 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 73164 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T12:50:43.583-03:00  INFO 73164 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T12:50:43.635-03:00  INFO 73164 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T12:50:43.635-03:00  INFO 73164 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T12:50:44.689-03:00  INFO 73164 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T12:50:44.730-03:00  INFO 73164 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2024-03-18T12:50:45.634-03:00  INFO 73164 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T12:50:45.644-03:00  INFO 73164 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T12:50:45.644-03:00  INFO 73164 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T12:50:45.681-03:00  INFO 73164 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T12:50:45.681-03:00  INFO 73164 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2046 ms
+2024-03-18T12:50:45.816-03:00  INFO 73164 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T12:50:46.064-03:00  INFO 73164 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T12:50:46.065-03:00  INFO 73164 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T12:50:46.076-03:00  INFO 73164 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T12:50:46.275-03:00  INFO 73164 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T12:50:46.326-03:00  INFO 73164 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T12:50:46.356-03:00  INFO 73164 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T12:50:46.606-03:00  INFO 73164 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T12:50:46.651-03:00  WARN 73164 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T12:50:47.389-03:00  INFO 73164 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T12:50:47.391-03:00  INFO 73164 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T12:50:48.078-03:00  WARN 73164 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T12:50:50.148-03:00  INFO 73164 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T12:50:50.163-03:00  INFO 73164 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T12:50:50.276-03:00  INFO 73164 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T12:50:50.298-03:00  INFO 73164 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.027 seconds (process running for 7.834)
+2024-03-18T12:50:50.305-03:00  INFO 73164 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T12:50:50.652-03:00  INFO 73164 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T12:50:50.652-03:00  INFO 73164 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T12:50:50.654-03:00  INFO 73164 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-18T12:51:23.835-03:00  INFO 73164 --- [ms-product] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 418 ms
+2024-03-18T12:51:25.084-03:00  WARN 73164 --- [ms-product] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T12:51:54.869-03:00  WARN 73164 --- [ms-product] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T12:52:36.101-03:00  WARN 73164 --- [ms-product] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T12:53:05.502-03:00  WARN 73164 --- [ms-product] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T12:55:18.269-03:00  WARN 73164 --- [ms-product] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2024-03-18T12:55:37.196-03:00  WARN 73164 --- [ms-product] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-03-18T12:55:50.300-03:00  INFO 73164 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:00:50.317-03:00  INFO 73164 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:02:54.687-03:00  WARN 73164 --- [ms-product] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2024-03-18T13:03:25.709-03:00  WARN 73164 --- [ms-product] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:05:50.313-03:00  INFO 73164 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:09:17.209-03:00  INFO 73164 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:09:17.227-03:00  INFO 73164 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:09:17.231-03:00  INFO 73164 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:11:02.693-03:00  INFO 73936 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 73936 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:11:02.695-03:00  INFO 73936 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:11:02.725-03:00  INFO 73936 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:11:02.725-03:00  INFO 73936 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:11:03.805-03:00  INFO 73936 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:11:03.846-03:00  INFO 73936 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2024-03-18T13:11:04.751-03:00  INFO 73936 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:11:04.764-03:00  INFO 73936 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:11:04.764-03:00  INFO 73936 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:11:04.809-03:00  INFO 73936 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:11:04.809-03:00  INFO 73936 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2083 ms
+2024-03-18T13:11:04.957-03:00  INFO 73936 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:11:05.220-03:00  INFO 73936 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:11:05.222-03:00  INFO 73936 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:11:05.234-03:00  INFO 73936 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:11:05.434-03:00  INFO 73936 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:11:05.498-03:00  INFO 73936 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:11:05.528-03:00  INFO 73936 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:11:05.781-03:00  INFO 73936 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:11:05.820-03:00  WARN 73936 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:11:06.622-03:00  INFO 73936 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:11:06.625-03:00  INFO 73936 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:11:07.211-03:00  WARN 73936 --- [ms-product] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3: No qualifying bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-03-18T13:11:07.212-03:00  INFO 73936 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:11:07.214-03:00  INFO 73936 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:11:07.216-03:00  INFO 73936 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:11:07.218-03:00  INFO 73936 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-18T13:11:07.232-03:00  INFO 73936 --- [ms-product] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-18T13:11:07.254-03:00 ERROR 73936 --- [ms-product] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of method indexPageTransformer in org.springdoc.webmvc.ui.SwaggerConfig required a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' in your configuration.
+
+2024-03-18T13:15:51.633-03:00  INFO 74081 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74081 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:15:51.635-03:00  INFO 74081 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:15:51.676-03:00  INFO 74081 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:15:51.676-03:00  INFO 74081 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:15:52.709-03:00  INFO 74081 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:15:52.748-03:00  INFO 74081 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2024-03-18T13:15:53.700-03:00  INFO 74081 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:15:53.713-03:00  INFO 74081 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:15:53.713-03:00  INFO 74081 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:15:53.755-03:00  INFO 74081 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:15:53.755-03:00  INFO 74081 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2079 ms
+2024-03-18T13:15:53.904-03:00  INFO 74081 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:15:54.189-03:00  INFO 74081 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:15:54.191-03:00  INFO 74081 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:15:54.203-03:00  INFO 74081 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:15:54.419-03:00  INFO 74081 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:15:54.486-03:00  INFO 74081 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:15:54.517-03:00  INFO 74081 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:15:54.742-03:00  INFO 74081 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:15:54.799-03:00  WARN 74081 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:15:55.639-03:00  INFO 74081 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:15:55.642-03:00  INFO 74081 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:15:56.307-03:00  WARN 74081 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:15:58.142-03:00  INFO 74081 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:15:58.154-03:00  INFO 74081 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:15:58.246-03:00  INFO 74081 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:15:58.262-03:00  INFO 74081 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.053 seconds (process running for 7.967)
+2024-03-18T13:15:58.269-03:00  INFO 74081 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:15:58.746-03:00  INFO 74081 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:15:58.746-03:00  INFO 74081 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:15:58.748-03:00  INFO 74081 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-18T13:16:22.739-03:00  INFO 74081 --- [ms-product] [http-nio-8080-exec-1] c.tekton.msproduct.config.LoggerConfig   : Request received at: 1710778582739
+2024-03-18T13:16:22.860-03:00  INFO 74081 --- [ms-product] [http-nio-8080-exec-1] c.tekton.msproduct.config.LoggerConfig   : Request processed at: 1710778582860
+2024-03-18T13:16:32.585-03:00  INFO 74081 --- [ms-product] [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 435 ms
+2024-03-18T13:16:33.828-03:00  WARN 74081 --- [ms-product] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:17:03.620-03:00  WARN 74081 --- [ms-product] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:19:08.693-03:00  INFO 74081 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:19:08.705-03:00  INFO 74081 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:19:08.722-03:00  INFO 74081 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:19:12.890-03:00  INFO 74204 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74204 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:19:12.891-03:00  INFO 74204 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:19:12.935-03:00  INFO 74204 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:19:12.935-03:00  INFO 74204 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:19:13.892-03:00  INFO 74204 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:19:13.927-03:00  INFO 74204 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2024-03-18T13:19:15.082-03:00  INFO 74204 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:19:15.095-03:00  INFO 74204 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:19:15.095-03:00  INFO 74204 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:19:15.139-03:00  INFO 74204 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:19:15.140-03:00  INFO 74204 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2204 ms
+2024-03-18T13:19:15.330-03:00  INFO 74204 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:19:15.615-03:00  INFO 74204 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:19:15.617-03:00  INFO 74204 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:19:15.633-03:00  INFO 74204 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:19:15.889-03:00  INFO 74204 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:19:15.970-03:00  INFO 74204 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:19:16.010-03:00  INFO 74204 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:19:16.357-03:00  INFO 74204 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:19:16.410-03:00  WARN 74204 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:19:17.307-03:00  INFO 74204 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:19:17.309-03:00  INFO 74204 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:19:18.053-03:00  WARN 74204 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:19:19.877-03:00  INFO 74204 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:19:19.890-03:00  INFO 74204 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:19:20.027-03:00  INFO 74204 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:19:20.049-03:00  INFO 74204 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.669 seconds (process running for 8.779)
+2024-03-18T13:19:20.056-03:00  INFO 74204 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:19:20.441-03:00  INFO 74204 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:19:20.441-03:00  INFO 74204 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:19:20.443-03:00  INFO 74204 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-18T13:19:25.718-03:00  INFO 74204 --- [ms-product] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 398 ms
+2024-03-18T13:19:27.157-03:00  WARN 74204 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:19:56.749-03:00  WARN 74204 --- [ms-product] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:24:20.053-03:00  INFO 74204 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:25:57.260-03:00  INFO 74204 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:25:57.287-03:00  INFO 74204 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:25:57.291-03:00  INFO 74204 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:26:01.151-03:00  INFO 74498 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74498 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:26:01.153-03:00  INFO 74498 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:26:01.202-03:00  INFO 74498 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:26:01.203-03:00  INFO 74498 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:26:02.273-03:00  INFO 74498 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:26:02.307-03:00  INFO 74498 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-03-18T13:26:03.218-03:00  INFO 74498 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:26:03.229-03:00  INFO 74498 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:26:03.229-03:00  INFO 74498 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:26:03.264-03:00  INFO 74498 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:26:03.264-03:00  INFO 74498 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2061 ms
+2024-03-18T13:26:03.407-03:00  INFO 74498 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:26:03.659-03:00  INFO 74498 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:26:03.660-03:00  INFO 74498 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:26:03.673-03:00  INFO 74498 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:26:03.887-03:00  INFO 74498 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:26:03.954-03:00  INFO 74498 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:26:03.990-03:00  INFO 74498 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:26:04.237-03:00  INFO 74498 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:26:04.289-03:00  WARN 74498 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:26:05.112-03:00  INFO 74498 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:26:05.114-03:00  INFO 74498 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:26:05.841-03:00  WARN 74498 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:26:07.836-03:00  INFO 74498 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:26:07.850-03:00  INFO 74498 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:26:07.951-03:00  INFO 74498 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:26:07.968-03:00  INFO 74498 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.339 seconds (process running for 8.359)
+2024-03-18T13:26:07.974-03:00  INFO 74498 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:26:08.149-03:00  INFO 74498 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:26:08.150-03:00  INFO 74498 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:26:08.152-03:00  INFO 74498 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-18T13:26:19.641-03:00  WARN 74498 --- [ms-product] [http-nio-8080-exec-4] i.swagger.v3.core.jackson.ModelResolver  : jackson BeanDescription.findJsonValueAccessor not found, this could lead to inaccurate result, please update jackson to 2.9+
+2024-03-18T13:26:19.647-03:00  WARN 74498 --- [ms-product] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'io.swagger.v3.oas.annotations.media.Schema$RequiredMode io.swagger.v3.oas.annotations.media.Schema.requiredMode()']
+2024-03-18T13:26:20.992-03:00  WARN 74498 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:26:50.674-03:00  WARN 74498 --- [ms-product] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:27:02.284-03:00  INFO 74498 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:27:02.294-03:00  INFO 74498 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:27:02.313-03:00  INFO 74498 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:27:05.727-03:00  INFO 74528 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74528 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:27:05.731-03:00  INFO 74528 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:27:05.825-03:00  INFO 74528 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:27:05.826-03:00  INFO 74528 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:27:06.892-03:00  INFO 74528 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:27:06.927-03:00  INFO 74528 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-03-18T13:27:07.831-03:00  INFO 74528 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:27:07.843-03:00  INFO 74528 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:27:07.843-03:00  INFO 74528 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:27:07.887-03:00  INFO 74528 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:27:07.887-03:00  INFO 74528 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2058 ms
+2024-03-18T13:27:08.039-03:00  INFO 74528 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:27:08.282-03:00  INFO 74528 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:27:08.283-03:00  INFO 74528 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:27:08.298-03:00  INFO 74528 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:27:08.503-03:00  INFO 74528 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:27:08.568-03:00  INFO 74528 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:27:08.605-03:00  INFO 74528 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:27:08.855-03:00  INFO 74528 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:27:08.908-03:00  WARN 74528 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:27:09.689-03:00  INFO 74528 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:27:09.692-03:00  INFO 74528 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:27:10.380-03:00  WARN 74528 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:27:12.143-03:00  INFO 74528 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:27:12.155-03:00  INFO 74528 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:27:12.249-03:00  INFO 74528 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:27:12.267-03:00  INFO 74528 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.185 seconds (process running for 8.01)
+2024-03-18T13:27:12.274-03:00  INFO 74528 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:27:12.766-03:00  INFO 74528 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:27:12.767-03:00  INFO 74528 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:27:12.768-03:00  INFO 74528 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-18T13:27:15.510-03:00  WARN 74528 --- [ms-product] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.]
+2024-03-18T13:27:17.219-03:00  WARN 74528 --- [ms-product] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:27:46.676-03:00  WARN 74528 --- [ms-product] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:28:32.943-03:00  WARN 74528 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.]
+2024-03-18T13:28:34.564-03:00  WARN 74528 --- [ms-product] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:29:04.077-03:00  WARN 74528 --- [ms-product] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:29:39.470-03:00  INFO 74528 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:29:39.481-03:00  INFO 74528 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:29:39.500-03:00  INFO 74528 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:29:42.414-03:00  INFO 74650 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74650 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:29:42.416-03:00  INFO 74650 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:29:42.453-03:00  INFO 74650 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:29:42.453-03:00  INFO 74650 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:29:43.401-03:00  INFO 74650 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:29:43.439-03:00  INFO 74650 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2024-03-18T13:29:44.260-03:00  INFO 74650 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:29:44.273-03:00  INFO 74650 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:29:44.273-03:00  INFO 74650 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:29:44.318-03:00  INFO 74650 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:29:44.319-03:00  INFO 74650 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1866 ms
+2024-03-18T13:29:44.496-03:00  INFO 74650 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:29:44.777-03:00  INFO 74650 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:29:44.779-03:00  INFO 74650 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:29:44.790-03:00  INFO 74650 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:29:44.986-03:00  INFO 74650 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:29:45.045-03:00  INFO 74650 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:29:45.081-03:00  INFO 74650 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:29:45.329-03:00  INFO 74650 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:29:45.378-03:00  WARN 74650 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:29:46.183-03:00  INFO 74650 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:29:46.186-03:00  INFO 74650 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:29:46.837-03:00  WARN 74650 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:29:48.534-03:00  INFO 74650 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:29:48.545-03:00  INFO 74650 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:29:48.639-03:00  INFO 74650 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:29:48.655-03:00  INFO 74650 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 6.64 seconds (process running for 7.571)
+2024-03-18T13:29:48.661-03:00  INFO 74650 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:29:48.991-03:00  INFO 74650 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:29:48.991-03:00  INFO 74650 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:29:48.993-03:00  INFO 74650 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-18T13:29:50.343-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.]
+2024-03-18T13:29:52.142-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:29:54.585-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.]
+2024-03-18T13:29:56.234-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:29:58.859-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-7] i.swagger.v3.core.jackson.ModelResolver  : jackson BeanDescription.findJsonValueAccessor not found, this could lead to inaccurate result, please update jackson to 2.9+
+2024-03-18T13:29:58.861-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'io.swagger.v3.oas.annotations.media.Schema$RequiredMode io.swagger.v3.oas.annotations.media.Schema.requiredMode()']
+2024-03-18T13:30:00.261-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:30:02.614-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-2] i.swagger.v3.core.jackson.ModelResolver  : jackson BeanDescription.findJsonValueAccessor not found, this could lead to inaccurate result, please update jackson to 2.9+
+2024-03-18T13:30:02.615-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'io.swagger.v3.oas.annotations.media.Schema$RequiredMode io.swagger.v3.oas.annotations.media.Schema.requiredMode()']
+2024-03-18T13:30:04.098-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:30:06.258-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-4] i.swagger.v3.core.jackson.ModelResolver  : jackson BeanDescription.findJsonValueAccessor not found, this could lead to inaccurate result, please update jackson to 2.9+
+2024-03-18T13:30:06.259-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'io.swagger.v3.oas.annotations.media.Schema$RequiredMode io.swagger.v3.oas.annotations.media.Schema.requiredMode()']
+2024-03-18T13:30:10.371-03:00  WARN 74650 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource v2/api-docs.]
+2024-03-18T13:30:24.124-03:00  INFO 74650 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:30:24.136-03:00  INFO 74650 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:30:24.157-03:00  INFO 74650 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:30:27.221-03:00  INFO 74679 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74679 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:30:27.225-03:00  INFO 74679 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:30:27.283-03:00  INFO 74679 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:30:27.283-03:00  INFO 74679 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:30:28.767-03:00  INFO 74679 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:30:28.803-03:00  INFO 74679 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2024-03-18T13:30:29.650-03:00  INFO 74679 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:30:29.663-03:00  INFO 74679 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:30:29.663-03:00  INFO 74679 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:30:29.705-03:00  INFO 74679 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:30:29.705-03:00  INFO 74679 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2422 ms
+2024-03-18T13:30:29.852-03:00  INFO 74679 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:30:30.090-03:00  INFO 74679 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:30:30.091-03:00  INFO 74679 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:30:30.102-03:00  INFO 74679 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:30:30.306-03:00  INFO 74679 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:30:30.376-03:00  INFO 74679 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:30:30.413-03:00  INFO 74679 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:30:30.651-03:00  INFO 74679 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:30:30.702-03:00  WARN 74679 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:30:31.519-03:00  INFO 74679 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:30:31.521-03:00  INFO 74679 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:30:32.194-03:00  WARN 74679 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:30:33.933-03:00  INFO 74679 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:30:33.944-03:00  INFO 74679 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:30:34.033-03:00  INFO 74679 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:30:34.049-03:00  INFO 74679 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.333 seconds (process running for 8.152)
+2024-03-18T13:30:34.055-03:00  INFO 74679 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:30:34.602-03:00  INFO 74679 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:30:34.602-03:00  INFO 74679 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:30:34.603-03:00  INFO 74679 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-18T13:30:38.916-03:00  WARN 74679 --- [ms-product] [http-nio-8080-exec-4] i.swagger.v3.core.jackson.ModelResolver  : jackson BeanDescription.findJsonValueAccessor not found, this could lead to inaccurate result, please update jackson to 2.9+
+2024-03-18T13:30:38.947-03:00  WARN 74679 --- [ms-product] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'io.swagger.v3.oas.annotations.media.Schema$RequiredMode io.swagger.v3.oas.annotations.media.Schema.requiredMode()']
+2024-03-18T13:30:40.284-03:00  WARN 74679 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:30:41.965-03:00  WARN 74679 --- [ms-product] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource v2/api-docs.]
+2024-03-18T13:31:13.024-03:00  WARN 74679 --- [ms-product] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:31:15.023-03:00  INFO 74679 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:31:15.035-03:00  INFO 74679 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:31:15.053-03:00  INFO 74679 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:31:19.320-03:00  INFO 74724 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74724 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:31:19.322-03:00  INFO 74724 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:31:19.354-03:00  INFO 74724 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:31:19.354-03:00  INFO 74724 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:31:20.456-03:00  INFO 74724 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:31:20.491-03:00  INFO 74724 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-03-18T13:31:21.400-03:00  INFO 74724 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:31:21.411-03:00  INFO 74724 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:31:21.411-03:00  INFO 74724 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:31:21.453-03:00  INFO 74724 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:31:21.454-03:00  INFO 74724 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2100 ms
+2024-03-18T13:31:21.605-03:00  INFO 74724 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:31:21.871-03:00  INFO 74724 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:31:21.873-03:00  INFO 74724 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:31:21.885-03:00  INFO 74724 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:31:22.080-03:00  INFO 74724 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:31:22.153-03:00  INFO 74724 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:31:22.189-03:00  INFO 74724 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:31:22.435-03:00  INFO 74724 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:31:22.483-03:00  WARN 74724 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:31:23.285-03:00  INFO 74724 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:31:23.288-03:00  INFO 74724 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:31:23.918-03:00  WARN 74724 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:31:25.669-03:00  INFO 74724 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:31:25.680-03:00  INFO 74724 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:31:25.768-03:00  INFO 74724 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:31:25.785-03:00  INFO 74724 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 6.971 seconds (process running for 8.096)
+2024-03-18T13:31:25.790-03:00  INFO 74724 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:31:26.102-03:00  INFO 74724 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:31:26.102-03:00  INFO 74724 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:31:26.103-03:00  INFO 74724 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-18T13:32:29.977-03:00  WARN 74724 --- [ms-product] [http-nio-8080-exec-4] i.swagger.v3.core.jackson.ModelResolver  : jackson BeanDescription.findJsonValueAccessor not found, this could lead to inaccurate result, please update jackson to 2.9+
+2024-03-18T13:32:29.982-03:00  WARN 74724 --- [ms-product] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'io.swagger.v3.oas.annotations.media.Schema$RequiredMode io.swagger.v3.oas.annotations.media.Schema.requiredMode()']
+2024-03-18T13:32:31.352-03:00  WARN 74724 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:32:32.303-03:00  WARN 74724 --- [ms-product] [http-nio-8080-exec-10] i.swagger.v3.core.jackson.ModelResolver  : jackson BeanDescription.findJsonValueAccessor not found, this could lead to inaccurate result, please update jackson to 2.9+
+2024-03-18T13:32:32.305-03:00  WARN 74724 --- [ms-product] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'io.swagger.v3.oas.annotations.media.Schema$RequiredMode io.swagger.v3.oas.annotations.media.Schema.requiredMode()']
+2024-03-18T13:32:33.797-03:00  WARN 74724 --- [ms-product] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:32:42.423-03:00  INFO 74724 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:32:42.432-03:00  INFO 74724 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:32:42.451-03:00  INFO 74724 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:32:44.804-03:00  INFO 74772 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74772 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:32:44.806-03:00  INFO 74772 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:32:44.845-03:00  INFO 74772 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:32:44.845-03:00  INFO 74772 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:32:45.859-03:00  INFO 74772 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:32:45.898-03:00  INFO 74772 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2024-03-18T13:32:46.808-03:00  INFO 74772 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:32:46.820-03:00  INFO 74772 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:32:46.821-03:00  INFO 74772 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:32:46.864-03:00  INFO 74772 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:32:46.864-03:00  INFO 74772 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2019 ms
+2024-03-18T13:32:47.018-03:00  INFO 74772 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:32:47.262-03:00  INFO 74772 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:32:47.264-03:00  INFO 74772 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:32:47.274-03:00  INFO 74772 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:32:47.492-03:00  INFO 74772 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:32:47.561-03:00  INFO 74772 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:32:47.594-03:00  INFO 74772 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:32:47.854-03:00  INFO 74772 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:32:47.901-03:00  WARN 74772 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:32:48.741-03:00  INFO 74772 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:32:48.744-03:00  INFO 74772 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:32:49.407-03:00  WARN 74772 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:32:51.107-03:00  INFO 74772 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:32:51.117-03:00  INFO 74772 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:32:51.205-03:00  INFO 74772 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:32:51.221-03:00  INFO 74772 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 6.8 seconds (process running for 7.797)
+2024-03-18T13:32:51.226-03:00  INFO 74772 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:32:51.332-03:00  INFO 74772 --- [ms-product] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:32:51.332-03:00  INFO 74772 --- [ms-product] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:32:51.334-03:00  INFO 74772 --- [ms-product] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-18T13:32:53.075-03:00  INFO 74772 --- [ms-product] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 407 ms
+2024-03-18T13:32:54.508-03:00  WARN 74772 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:33:23.936-03:00  WARN 74772 --- [ms-product] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:33:27.614-03:00  WARN 74772 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:33:32.787-03:00  INFO 74772 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:33:32.799-03:00  INFO 74772 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:33:32.819-03:00  INFO 74772 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:33:35.817-03:00  INFO 74804 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74804 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:33:35.819-03:00  INFO 74804 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:33:35.874-03:00  INFO 74804 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:33:35.874-03:00  INFO 74804 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:33:37.086-03:00  INFO 74804 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:33:37.134-03:00  INFO 74804 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-03-18T13:33:38.041-03:00  INFO 74804 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:33:38.053-03:00  INFO 74804 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:33:38.053-03:00  INFO 74804 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:33:38.097-03:00  INFO 74804 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:33:38.097-03:00  INFO 74804 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2223 ms
+2024-03-18T13:33:38.258-03:00  INFO 74804 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:33:38.516-03:00  INFO 74804 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:33:38.518-03:00  INFO 74804 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:33:38.529-03:00  INFO 74804 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:33:38.749-03:00  INFO 74804 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:33:38.812-03:00  INFO 74804 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:33:38.848-03:00  INFO 74804 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:33:39.110-03:00  INFO 74804 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:33:39.157-03:00  WARN 74804 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:33:40.004-03:00  INFO 74804 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:33:40.008-03:00  INFO 74804 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:33:40.820-03:00  WARN 74804 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:33:43.162-03:00  INFO 74804 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:33:43.175-03:00  INFO 74804 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:33:43.298-03:00  INFO 74804 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:33:43.318-03:00  INFO 74804 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.86 seconds (process running for 8.656)
+2024-03-18T13:33:43.322-03:00  INFO 74804 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:33:43.339-03:00  INFO 74804 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:33:43.342-03:00  INFO 74804 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:33:43.344-03:00  INFO 74804 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:33:45.563-03:00  INFO 74812 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 74812 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:33:45.565-03:00  INFO 74812 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:33:45.612-03:00  INFO 74812 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:33:45.612-03:00  INFO 74812 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:33:46.582-03:00  INFO 74812 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:33:46.617-03:00  INFO 74812 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2024-03-18T13:33:47.490-03:00  INFO 74812 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:33:47.501-03:00  INFO 74812 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:33:47.502-03:00  INFO 74812 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:33:47.552-03:00  INFO 74812 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:33:47.552-03:00  INFO 74812 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1939 ms
+2024-03-18T13:33:47.758-03:00  INFO 74812 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:33:47.973-03:00  INFO 74812 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:33:47.974-03:00  INFO 74812 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:33:47.986-03:00  INFO 74812 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:33:48.159-03:00  INFO 74812 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:33:48.203-03:00  INFO 74812 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:33:48.230-03:00  INFO 74812 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:33:48.445-03:00  INFO 74812 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:33:48.500-03:00  WARN 74812 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:33:49.249-03:00  INFO 74812 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:33:49.252-03:00  INFO 74812 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:33:49.948-03:00  WARN 74812 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:33:51.739-03:00  INFO 74812 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:33:51.754-03:00  INFO 74812 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:33:51.866-03:00  INFO 74812 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:33:51.883-03:00  INFO 74812 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 6.699 seconds (process running for 7.603)
+2024-03-18T13:33:51.888-03:00  INFO 74812 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:33:51.973-03:00  INFO 74812 --- [ms-product] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:33:51.973-03:00  INFO 74812 --- [ms-product] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:33:51.976-03:00  INFO 74812 --- [ms-product] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-18T13:33:52.505-03:00  WARN 74812 --- [ms-product] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:33:52.795-03:00  INFO 74812 --- [ms-product] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 552 ms
+2024-03-18T13:33:54.334-03:00  WARN 74812 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:34:23.864-03:00  WARN 74812 --- [ms-product] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:38:51.890-03:00  INFO 74812 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:39:14.197-03:00  INFO 74812 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:39:14.205-03:00  INFO 74812 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:39:14.223-03:00  INFO 74812 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:39:17.830-03:00  INFO 75028 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 75028 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:39:17.832-03:00  INFO 75028 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:39:17.871-03:00  INFO 75028 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:39:17.871-03:00  INFO 75028 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:39:18.809-03:00  INFO 75028 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:39:18.843-03:00  INFO 75028 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2024-03-18T13:39:19.661-03:00  INFO 75028 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:39:19.674-03:00  INFO 75028 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:39:19.674-03:00  INFO 75028 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:39:19.713-03:00  INFO 75028 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:39:19.714-03:00  INFO 75028 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1842 ms
+2024-03-18T13:39:19.848-03:00  INFO 75028 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:39:20.090-03:00  INFO 75028 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:39:20.092-03:00  INFO 75028 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:39:20.103-03:00  INFO 75028 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:39:20.294-03:00  INFO 75028 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:39:20.345-03:00  INFO 75028 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:39:20.379-03:00  INFO 75028 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:39:20.616-03:00  INFO 75028 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:39:20.667-03:00  WARN 75028 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:39:21.426-03:00  INFO 75028 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:39:21.428-03:00  INFO 75028 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:39:22.265-03:00  WARN 75028 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:39:24.456-03:00  INFO 75028 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:39:24.468-03:00  INFO 75028 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:39:24.573-03:00  INFO 75028 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:39:24.592-03:00  INFO 75028 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.096 seconds (process running for 8.041)
+2024-03-18T13:39:24.599-03:00  INFO 75028 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:39:24.990-03:00  INFO 75028 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:39:24.990-03:00  INFO 75028 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:39:24.992-03:00  INFO 75028 --- [ms-product] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-18T13:39:28.189-03:00  INFO 75028 --- [ms-product] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 429 ms
+2024-03-18T13:39:29.405-03:00  WARN 75028 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:39:59.230-03:00  WARN 75028 --- [ms-product] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:44:24.596-03:00  INFO 75028 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:44:33.410-03:00  INFO 75028 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:44:33.418-03:00  INFO 75028 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:44:33.437-03:00  INFO 75028 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:44:37.284-03:00  INFO 75198 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 75198 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:44:37.286-03:00  INFO 75198 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:44:37.342-03:00  INFO 75198 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:44:37.343-03:00  INFO 75198 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:44:38.567-03:00  INFO 75198 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:44:38.617-03:00  INFO 75198 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-03-18T13:44:39.660-03:00  INFO 75198 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:44:39.672-03:00  INFO 75198 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:44:39.672-03:00  INFO 75198 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:44:39.720-03:00  INFO 75198 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:44:39.721-03:00  INFO 75198 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2377 ms
+2024-03-18T13:44:39.893-03:00  INFO 75198 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:44:40.140-03:00  INFO 75198 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:44:40.141-03:00  INFO 75198 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:44:40.152-03:00  INFO 75198 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:44:40.367-03:00  INFO 75198 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:44:40.425-03:00  INFO 75198 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:44:40.463-03:00  INFO 75198 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:44:40.709-03:00  INFO 75198 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:44:40.755-03:00  WARN 75198 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:44:41.561-03:00  INFO 75198 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:44:41.565-03:00  INFO 75198 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:44:42.315-03:00  WARN 75198 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:44:44.176-03:00  INFO 75198 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:44:44.187-03:00  INFO 75198 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:44:44.267-03:00  INFO 75198 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:44:44.282-03:00  INFO 75198 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.59 seconds (process running for 8.644)
+2024-03-18T13:44:44.287-03:00  INFO 75198 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:44:44.557-03:00  INFO 75198 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:44:44.558-03:00  INFO 75198 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:44:44.559-03:00  INFO 75198 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-18T13:46:38.925-03:00  INFO 75198 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:46:38.931-03:00  INFO 75198 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T13:46:38.949-03:00  INFO 75198 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T13:46:41.963-03:00  INFO 75290 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 75290 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T13:46:41.966-03:00  INFO 75290 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T13:46:42.074-03:00  INFO 75290 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T13:46:42.075-03:00  INFO 75290 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T13:46:43.201-03:00  INFO 75290 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T13:46:43.244-03:00  INFO 75290 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2024-03-18T13:46:44.306-03:00  INFO 75290 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T13:46:44.320-03:00  INFO 75290 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T13:46:44.321-03:00  INFO 75290 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T13:46:44.370-03:00  INFO 75290 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T13:46:44.370-03:00  INFO 75290 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2293 ms
+2024-03-18T13:46:44.530-03:00  INFO 75290 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T13:46:44.756-03:00  INFO 75290 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T13:46:44.757-03:00  INFO 75290 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T13:46:44.766-03:00  INFO 75290 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T13:46:44.983-03:00  INFO 75290 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T13:46:45.049-03:00  INFO 75290 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T13:46:45.085-03:00  INFO 75290 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T13:46:45.329-03:00  INFO 75290 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T13:46:45.375-03:00  WARN 75290 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T13:46:46.149-03:00  INFO 75290 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T13:46:46.152-03:00  INFO 75290 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T13:46:46.791-03:00  WARN 75290 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T13:46:48.695-03:00  INFO 75290 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T13:46:48.709-03:00  INFO 75290 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T13:46:48.797-03:00  INFO 75290 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T13:46:48.814-03:00  INFO 75290 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 7.293 seconds (process running for 8.233)
+2024-03-18T13:46:48.819-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T13:46:49.087-03:00  INFO 75290 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T13:46:49.088-03:00  INFO 75290 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T13:46:49.090-03:00  INFO 75290 --- [ms-product] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-18T13:46:53.812-03:00  INFO 75290 --- [ms-product] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 399 ms
+2024-03-18T13:46:55.021-03:00  WARN 75290 --- [ms-product] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:47:24.852-03:00  WARN 75290 --- [ms-product] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:48:26.759-03:00  WARN 75290 --- [ms-product] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:48:56.544-03:00  WARN 75290 --- [ms-product] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource sw-debug.js.]
+2024-03-18T13:52:17.744-03:00  WARN 75290 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m2s864ms).
+2024-03-18T13:54:21.688-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T14:00:01.816-03:00  WARN 75290 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m44s44ms).
+2024-03-18T14:31:06.351-03:00  WARN 75290 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m34s185ms).
+2024-03-18T14:33:38.924-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T14:38:38.920-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T14:43:38.913-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T14:48:38.914-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T14:53:38.898-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T14:58:38.894-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T15:03:38.889-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T15:08:38.879-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T15:13:38.874-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T17:17:58.641-03:00  WARN 75290 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h21s643ms).
+2024-03-18T17:18:30.589-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T17:29:40.725-03:00  WARN 75290 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m12s59ms).
+2024-03-18T19:30:06.680-03:00  WARN 75290 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h25s955ms).
+2024-03-18T21:31:02.903-03:00  WARN 75290 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h26s218ms).
+2024-03-18T22:15:29.054-03:00  WARN 75290 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m26s152ms).
+2024-03-18T22:18:00.945-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T22:23:00.937-03:00  INFO 75290 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T22:27:23.373-03:00  INFO 75290 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T22:27:23.401-03:00  INFO 75290 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-18T22:27:23.407-03:00  INFO 75290 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-18T22:27:27.670-03:00  INFO 78004 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 78004 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-18T22:27:27.672-03:00  INFO 78004 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T22:27:27.708-03:00  INFO 78004 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-18T22:27:27.708-03:00  INFO 78004 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-18T22:27:28.624-03:00  INFO 78004 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-18T22:27:28.658-03:00  INFO 78004 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-03-18T22:27:29.473-03:00  INFO 78004 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-18T22:27:29.484-03:00  INFO 78004 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T22:27:29.485-03:00  INFO 78004 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T22:27:29.523-03:00  INFO 78004 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T22:27:29.523-03:00  INFO 78004 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1814 ms
+2024-03-18T22:27:29.660-03:00  INFO 78004 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-18T22:27:29.897-03:00  INFO 78004 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-18T22:27:29.899-03:00  INFO 78004 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-18T22:27:29.908-03:00  INFO 78004 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-18T22:27:30.086-03:00  INFO 78004 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-18T22:27:30.137-03:00  INFO 78004 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-18T22:27:30.169-03:00  INFO 78004 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-18T22:27:30.395-03:00  INFO 78004 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-18T22:27:30.443-03:00  WARN 78004 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-18T22:27:31.195-03:00  INFO 78004 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-18T22:27:31.198-03:00  INFO 78004 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-18T22:27:31.839-03:00  WARN 78004 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-18T22:27:33.523-03:00  INFO 78004 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-18T22:27:33.532-03:00  INFO 78004 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-18T22:27:33.612-03:00  INFO 78004 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-18T22:27:33.627-03:00  INFO 78004 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Started MsProductApplication in 6.305 seconds (process running for 7.517)
+2024-03-18T22:27:33.632-03:00  INFO 78004 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-18T22:27:33.766-03:00  INFO 78004 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T22:27:33.766-03:00  INFO 78004 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T22:27:33.768-03:00  INFO 78004 --- [ms-product] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
