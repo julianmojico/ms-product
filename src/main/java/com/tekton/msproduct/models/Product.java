@@ -20,7 +20,9 @@ public class Product {
     private int stock;
     private String description;
     private float price;
+    @Transient
     private float discount;
+    @Transient
     private float finalPrice;
     private String sku;
 }
