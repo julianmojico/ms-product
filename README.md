@@ -21,11 +21,19 @@ http://localhost:8080/h2-console/
 - Find REST API documentation in SwaggerUI:
 http://localhost:8080/swagger-ui/index.html#/
 
+**
+h2 admin**
+![image](https://github.com/julianmojico/ms-product/assets/12740590/1cd181a2-131b-4e29-84d5-a1c310f9ce07)
+
 
 #### Infraestructure
 
+
 ##### Provisioning: AWS Beanstalk
 AWS Elastic Beanstalk is a Platform-as-a-Service (PaaS) offering from Amazon Web Services (AWS) that makes it easy to deploy and manage applications in the cloud. Elastic Beanstalk handles the deployment, scaling, and monitoring of your application infrastructure, allowing you to focus on building and running your application.
+
+![image](https://github.com/julianmojico/ms-product/assets/12740590/53876c36-3df4-4e46-b78e-700854136766)
+
 
 ##### Auto-scaling
 Auto Scaling: Elastic Beanstalk automatically scales your application based on demand, allowing it to handle fluctuations in traffic without manual intervention.
@@ -37,6 +45,18 @@ Beanstalk offers embedded Monitoring strategy for most important metrics.
 In this case the parameters elections are: CPU, InstanceHealth, Request ammount 3xx, 4xx, 5xx.
 When the threshold is overcome, notification emails are sent by email.
 
+Instance scaling
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2de33e44-a367-4741-af18-cd73d6f88cda/b3207593-e178-4426-bd73-87e8ac82024b/Untitled.png)
+
+Environment monitoring
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2de33e44-a367-4741-af18-cd73d6f88cda/a034a916-b5a2-4275-835b-bc3dd58b56ed/Untitled.png)
+
+
+Instance Monitoring:
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2de33e44-a367-4741-af18-cd73d6f88cda/59d7c958-fbef-4e26-aa75-7c46082e0f2d/Untitled.png)
 
 
 
