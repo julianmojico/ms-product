@@ -2,8 +2,6 @@
 Technical challenge for tekton
 
 
-SolarSystem simulation model based in Java used to predict weather
-
 #### Installation instructions
 
 1. Clone Repo 
@@ -26,9 +24,22 @@ http://localhost:8080/swagger-ui/index.html#/
 
 #### Infraestructure
 
+##### Provisioning: AWS Beanstalk
+AWS Elastic Beanstalk is a Platform-as-a-Service (PaaS) offering from Amazon Web Services (AWS) that makes it easy to deploy and manage applications in the cloud. Elastic Beanstalk handles the deployment, scaling, and monitoring of your application infrastructure, allowing you to focus on building and running your application.
 
-1.8.1. Sustentar la elección de recursos en la nube, y su capacidad de
-escalabilidad.
+##### Auto-scaling
+Auto Scaling: Elastic Beanstalk automatically scales your application based on demand, allowing it to handle fluctuations in traffic without manual intervention.
+In this case, the implementation of this polity is to add one more instance when average Network load is higher than than 60.000 bytes within a 5 minutes window, up to 3 instances.
+Take into consideration that this setup is for a t3.micro and t3.small instances.
+
+##### Monitoring
+Beanstalk offers embedded Monitoring strategy for most important metrics.
+In this case the parameters elections are: CPU, InstanceHealth, Request ammount 3xx, 4xx, 5xx.
+When the threshold is overcome, notification emails are sent by email.
+
+
+
+
 1.8.2. Sustentar la estrategia de Monitoreo.
 1.8.3. Breve descripción de los patrones utilizados.
 1.8.4. Diagrama de arquitectura usada en el proyecto.

@@ -2164,3 +2164,97 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2024-03-19T14:48:17.620-03:00  INFO 88073 --- [ms-product] [http-nio-8080-exec-9] c.tekton.msproduct.config.LoggerConfig   : Request processed at: 1710870497620
 2024-03-19T14:48:19.376-03:00  INFO 88073 --- [ms-product] [http-nio-8080-exec-10] c.tekton.msproduct.config.LoggerConfig   : Request received at: 1710870499376
 2024-03-19T14:48:19.578-03:00  INFO 88073 --- [ms-product] [http-nio-8080-exec-10] c.tekton.msproduct.config.LoggerConfig   : Request processed at: 1710870499578
+2024-03-19T14:52:55.108-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T14:57:55.042-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T16:58:13.956-03:00  WARN 88073 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h22s721ms).
+2024-03-19T17:05:34.876-03:00  WARN 88073 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m20s920ms).
+2024-03-19T17:09:38.047-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T17:14:38.036-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T17:19:38.041-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T17:24:38.071-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T17:29:38.077-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T17:34:38.078-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T17:39:38.084-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T17:44:38.080-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T17:49:38.078-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T18:08:45.482-03:00  WARN 88073 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m40s286ms).
+2024-03-19T20:09:10.782-03:00  WARN 88073 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h25s301ms).
+2024-03-19T20:10:43.209-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T20:18:35.805-03:00  WARN 88073 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m54s896ms).
+2024-03-19T20:19:08.088-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T20:24:08.079-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T20:29:08.068-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T20:34:08.059-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T20:39:08.048-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T21:15:01.576-03:00  WARN 88073 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m25s656ms).
+2024-03-19T21:15:03.749-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T21:20:03.730-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T21:25:03.728-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T21:30:03.725-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T21:35:03.810-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T21:56:58.733-03:00  WARN 88073 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m56s914ms).
+2024-03-19T22:00:30.793-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:05:30.798-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:10:30.812-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:15:30.838-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:20:30.845-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:25:30.853-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:30:30.863-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:35:30.872-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:40:30.880-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:45:30.879-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T22:50:30.891-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T23:05:36.559-03:00  WARN 88073 --- [ms-product] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m37s412ms).
+2024-03-19T23:06:38.330-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T23:11:38.331-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T23:16:38.328-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T23:21:38.288-03:00  INFO 88073 --- [ms-product] [scheduling-1] c.tekton.msproduct.config.LoggerConfig   : cleared productsStatus cache
+2024-03-19T23:24:23.135-03:00  INFO 88073 --- [ms-product] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T23:24:23.158-03:00  INFO 88073 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-19T23:24:23.181-03:00  INFO 88073 --- [ms-product] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-19T23:24:29.564-03:00  INFO 94227 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : Starting MsProductApplication using Java 21.0.2 with PID 94227 (/Users/julianmojico/projects/ms-product/build/classes/java/main started by julianmojico in /Users/julianmojico/projects/ms-product)
+2024-03-19T23:24:29.570-03:00  INFO 94227 --- [ms-product] [restartedMain] c.tekton.msproduct.MsProductApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T23:24:29.631-03:00  INFO 94227 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-19T23:24:29.637-03:00  INFO 94227 --- [ms-product] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-19T23:24:31.091-03:00  INFO 94227 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T23:24:31.137-03:00  INFO 94227 --- [ms-product] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-03-19T23:24:32.626-03:00  INFO 94227 --- [ms-product] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 5000 (http)
+2024-03-19T23:24:32.652-03:00  INFO 94227 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T23:24:32.653-03:00  INFO 94227 --- [ms-product] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T23:24:32.722-03:00  INFO 94227 --- [ms-product] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-19T23:24:32.722-03:00  INFO 94227 --- [ms-product] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3084 ms
+2024-03-19T23:24:32.986-03:00  INFO 94227 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-19T23:24:33.274-03:00  INFO 94227 --- [ms-product] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/product user=SA
+2024-03-19T23:24:33.276-03:00  INFO 94227 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-19T23:24:33.291-03:00  INFO 94227 --- [ms-product] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db/product'
+2024-03-19T23:24:33.686-03:00  INFO 94227 --- [ms-product] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T23:24:33.769-03:00  INFO 94227 --- [ms-product] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-19T23:24:33.812-03:00  INFO 94227 --- [ms-product] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T23:24:34.172-03:00  INFO 94227 --- [ms-product] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T23:24:34.261-03:00  WARN 94227 --- [ms-product] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T23:24:35.535-03:00  INFO 94227 --- [ms-product] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T23:24:35.541-03:00  INFO 94227 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T23:24:36.984-03:00  WARN 94227 --- [ms-product] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T23:24:39.336-03:00  INFO 94227 --- [ms-product] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T23:24:39.361-03:00  INFO 94227 --- [ms-product] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-03-19T23:24:39.488-03:00  WARN 94227 --- [ms-product] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-19T23:24:39.513-03:00  INFO 94227 --- [ms-product] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T23:24:39.518-03:00  INFO 94227 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-19T23:24:39.520-03:00  INFO 94227 --- [ms-product] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-19T23:24:39.545-03:00  INFO 94227 --- [ms-product] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-19T23:24:39.575-03:00 ERROR 94227 --- [ms-product] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 5000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 5000 or configure this application to listen on another port.
+
