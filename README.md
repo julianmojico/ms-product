@@ -45,28 +45,11 @@ Beanstalk offers embedded Monitoring strategy for most important metrics.
 In this case the parameters elections are: CPU, InstanceHealth, Request ammount 3xx, 4xx, 5xx.
 When the threshold is overcome, notification emails are sent by email.
 
-Instance scaling
+##### Instance auto-scaling
+![image](https://github.com/julianmojico/ms-product/assets/12740590/fcd3ad75-6bfe-45a0-a399-cfe2c02338f9)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2de33e44-a367-4741-af18-cd73d6f88cda/b3207593-e178-4426-bd73-87e8ac82024b/Untitled.png)
-
-Environment monitoring
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2de33e44-a367-4741-af18-cd73d6f88cda/a034a916-b5a2-4275-835b-bc3dd58b56ed/Untitled.png)
-
-
-Instance Monitoring:
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2de33e44-a367-4741-af18-cd73d6f88cda/59d7c958-fbef-4e26-aa75-7c46082e0f2d/Untitled.png)
-
-
-
-1.8.2. Sustentar la estrategia de Monitoreo.
-1.8.3. Breve descripción de los patrones utilizados.
-1.8.4. Diagrama de arquitectura usada en el proyecto.
-1.8.5. Diagrama de Infraestructura.
-1.8.6. Instrucciones para levantar el proyecto localmente.
-1.8.7. Información adicional que el candidato considere relevante.
-
+##### Environment monitoring
+![image](https://github.com/julianmojico/ms-product/assets/12740590/850a674e-e8ed-4a81-93a0-d8c78a83755f)
 
 
 ##### References:
